@@ -1,0 +1,10 @@
+services:
+    mq:
+      container_name: message_broker
+      image: rabbitmq:3-management
+      environment:
+        - RABBITMQ_DEFAULT_USER=root
+        - RABBITMQ_DEFAULT_PASS=rootRoot
+      ports:
+        - 5672:5672
+        - 15672:15672
